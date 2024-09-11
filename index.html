@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <title>Mi Cronómetro</title>
 </head>
 
 <body>
 
-    <div class="container-fluid bg-primary text-center pt-2">
+    <div class="container-fluid bg-info text-center pt-2">
         <b><p class="text-light" style="display: inline-block">Conferencia del área de Ciencia de Datos. Reclama tu pase gratuito:</p></b>
         <b><p class="bolder text-light" style="display: inline-block" id="tablero">01:29:10</p></b>
-        <b><p class="text-warning" style="display: inline-block"><u>Quiero mi pase</u></p></b>
+        <a href="./index.html">
+            <b><p class="text-warning" style="display: inline-block"><u>Quiero mi pase</u></p></b>
+        </a>
     </div>
 
     <!-- -------------------------- Creacion de menu --------------------------- -->
@@ -32,15 +35,15 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Productos
+                            Contenidos
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="./index.html">Cursos</a></li>
+                            <li><a class="dropdown-item" href="./index.html">Replays</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="./index.html">Bootcamps</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -49,16 +52,16 @@
                             Productos
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="./index.html">Premium MAX</a></li>
+                            <li><a class="dropdown-item" href="./index.html">Premium</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="./index.html">Bootcamps</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Precios</a>
+                        <a class="nav-link" href="./index.html">Precios</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -69,11 +72,88 @@
         </div>
     </nav>
 
-    <div class="botones">
-        <button id="boton_play">Play</button>
-        <button id="boton_pause">Pause</button>
-        <button id="boton_reset">Reset</button>
+    <div class="container-fluid text-center mt-2 mb-2 p-4 bg-info">
+        <div class="mx-auto m-2" style="width: 25cm;">
+            <h1>Aprende lo que tu carrera como programador necesita</h1>
+            <button type="button" class="btn btn-warning m-2">Empieza con 10 clases gratis</button>
+            <h6 class="m-2">Únete a la plataforma de aprendizaje para desarrolladores con más de 500 horas de contenidos
+                impartidos por expertos de la industria de la tecnología.</h6>
+        </div>
+        <div class="container">
+            <img src="./img/javascript.png" alt="logo_javascript" style="width: 50px; height: 50px"
+                class="mx-auto me-3">
+            <img src="./img/azure_logo.png" alt="logo_javascript" style="width: 50px; height: 50px"
+                class="mx-auto me-3">
+            <img src="./img/java_logo.png" alt="logo_javascript" style="width: 50px; height: 50px" class="mx-auto me-3">
+            <img src="./img/python_logo.png" alt="logo_javascript" style="width: 50px; height: 50px"
+                class="mx-auto me-3">
+            <img src="./img/html_logo.png" alt="logo_javascript" style="width: 50px; height: 50px" class="mx-auto me-3">
+            <img src="./img/react_logo.png" alt="logo_javascript" style="width: 50px; height: 50px"
+                class="mx-auto me-3">
+        </div>
     </div>
+
+    <button id="boton_play">Play</button>
+    <button id="boton_pause">Pause</button>
+    <button id="boton_reset">Reset</button>
+
+
+    <!-- ------------------------- Creacion de footer -------------------------- -->
+    <footer class="bg-dark text-white pt-4">
+        <div class="container text-center text-md-left">
+            <div class="row">
+                <!-- Información de la compañía -->
+                <div class="col-md-3 text-start">
+                    <h5 class="mb-3">Código Facilito</h5>
+                    <div class="container bg-black rounded p-3 mb-3">
+                        <p>“Los ordenadores son inútiles. Sólo pueden darte respuestas” - Pablo Picasso</p>
+                    </div>
+                    <a href="./index.html" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="./index.html" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="./index.html" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="./index.html" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+                <!-- Enlaces rápidos -->
+                <div class="col-md-3 text-start">
+                    <h5 class="mb-3">Enlaces</h5>
+                    <ul class="list-unstyled fs-6">
+                        <li><a href="./index.html" class="text-white text-decoration-none">Desarrollador Web Frontend</a></li>
+                        <li><a href="./index.html" class="text-white text-decoration-none">Desarrollador JavaScript</a></li>
+                        <li><a href="./index.html" class="text-white text-decoration-none">Desarrollador Python</a></li>
+                        <li><a href="./index.html" class="text-white text-decoration-none">Introducción a la Programación</a></li>
+                        <li><a href="./index.html" class="text-white text-decoration-none">Desarrollo con Flutter</a></li>
+                        <li><a href="./index.html" class="text-white text-decoration-none">Especialidad de React</a></li>
+                        <li><a href="./index.html" class="text-white text-decoration-none">Ciencia de Datos</a></li>
+                    </ul>
+                </div>
+
+                <!-- Redes sociales -->
+                <div class="col-md-3 fs-6 text-start">
+                    <h5 class="mb-3">Código Facilito</h5>
+                    <p>Cursos</p>
+                    <p>Términos y Condiciones</p>
+                    <p>Aviso de privacidad</p>
+                    <p>Contacto</p>
+                    <p>González Ortega No. 165, Jojutla Morelos, México</p>
+                </div>
+
+                <!-- Descargar en playstore -->
+                <div class="col-md-3 text-start">
+                    <h5 class="mb-3">Descarga la app</h5>
+                    <p>Hecho con 💚 desde LATAM para todo el mundo de habla hispana.</p>
+                    <div>
+                        <img src="./img/google-play.png" alt="logo_googleplay" style="width: 180px; height: 50px" class="mx-auto me-3">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="text-center py-3 bg-secondary mt-4">
+            <p class="mb-0">&copy; 2024 Codigo Facilito. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
 
     <script src="./js/javascript.js"></script>

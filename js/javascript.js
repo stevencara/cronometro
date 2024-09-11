@@ -1,8 +1,8 @@
 // DOM: Obtener elementos
 let tablero = document.getElementById("tablero");
-let boton_play = document.getElementById("boton_play");
+/*let boton_play = document.getElementById("boton_play");
 let boton_pause = document.getElementById("boton_pause");
-let boton_reset = document.getElementById("boton_reset");
+let boton_reset = document.getElementById("boton_reset");*/
 
 // Estados Cronometro
 let esta_activo = false;
@@ -31,8 +31,8 @@ function actualizar() {
         time.minutos = 60;
         time.horas--;
     }
-    tablero.innerHTML = `${formato(time.horas)}:${formato(time.minutos)}:${time.segundos}
-    `
+    tablero.innerHTML = `${formato(time.horas)}:${formato(time.minutos)}:${time.segundos}`
+
     if (esta_activo == true) {
         setTimeout(actualizar, 1000);
     }
@@ -40,12 +40,13 @@ function actualizar() {
 
 // Funciones Botones
 function play() {
-    if (esta_activo == false) {
+    if (!esta_activo) {
         esta_activo = true;
         actualizar();
     }
 }
-function pause() {
+
+/*function pause() {
     esta_activo = false;
 }
 function reset() {
@@ -58,4 +59,8 @@ function reset() {
 // Escuchar Eventos
 boton_play.addEventListener('click', play);
 boton_pause.addEventListener('click', pause);
-boton_reset.addEventListener('click', reset);
+boton_reset.addEventListener('click', reset);*/
+
+window.onload = function() {
+    play();
+};
