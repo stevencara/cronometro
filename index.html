@@ -1,26 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css">
     <title>Mi Cronómetro</title>
 </head>
-<body>
-    
 
-    <div class="container">
-        <div class="cronometro">
-            <div class="tablero">
-                <p id="tablero">00:00:0</p>
+<body>
+
+    <div class="container-fluid bg-primary text-center pt-2">
+        <b><p class="text-light" style="display: inline-block">Conferencia del área de Ciencia de Datos. Reclama tu pase gratuito:</p></b>
+        <b><p class="bolder text-light" style="display: inline-block" id="tablero">01:29:10</p></b>
+        <b><p class="text-warning" style="display: inline-block"><u>Quiero mi pase</u></p></b>
+    </div>
+
+    <!-- -------------------------- Creacion de menu --------------------------- -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                <a href="./index.html"><img src="./img/logo.png" alt="logo" style="height: 40px; width: 40px;"></a>
             </div>
-            <div class="botones">
-                <button id="boton_play">Play</button>
-                <button id="boton_pause">Pause</button>
-                <button id="boton_reset">Reset</button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Precios</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
             </div>
         </div>
+    </nav>
+
+    <div class="botones">
+        <button id="boton_play">Play</button>
+        <button id="boton_pause">Pause</button>
+        <button id="boton_reset">Reset</button>
     </div>
+
+
     <script src="./js/javascript.js"></script>
+    <script src="./bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+
 </body>
+
 </html>

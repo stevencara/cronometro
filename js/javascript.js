@@ -7,9 +7,9 @@ let boton_reset = document.getElementById("boton_reset");
 // Estados Cronometro
 let esta_activo = false;
 let time = {
-    decimas: 0,
-    segundos: 0,
-    minutos: 0
+    segundos: 10,
+    minutos: 29,
+    horas: 1
 }
 
 // Funcion Actualizar
@@ -22,19 +22,19 @@ function formato(numero) {
     }
 }
 function actualizar() {
-    time.decimas++;
-    if (time.decimas == 10) {
-        time.decimas = 0;
-        time.segundos++;
+    time.segundos--;
+    if (time.segundos == 0) {
+        time.segundos = 60;
+        time.minutos--;
     }
-    if (time.segundos == 60) {
-        time.segundos = 0;
-        time.minutos++;
+    if (time.minutos == 0) {
+        time.minutos = 60;
+        time.horas--;
     }
-    tablero.innerHTML = `${formato(time.minutos)}:${formato(time.segundos)}:${time.decimas}
+    tablero.innerHTML = `${formato(time.horas)}:${formato(time.minutos)}:${time.segundos}
     `
     if (esta_activo == true) {
-        setTimeout(actualizar, 100);
+        setTimeout(actualizar, 1000);
     }
 }
 
@@ -49,11 +49,10 @@ function pause() {
     esta_activo = false;
 }
 function reset() {
-    time.decimas = 0;
-    time.segundos = 0;
-    time.minutos = 0;
-    tablero.innerHTML = `${formato(time.minutos)}:${formato(time.segundos)}:${time.decimas}
-    `
+    time.segundos = 10;
+    time.minutos = 29;
+    time.horas = 1;
+    tablero.innerHTML = `${formato(time.horas)}:${formato(time.minutos)}:${time.segundos}`
 }
 
 // Escuchar Eventos
