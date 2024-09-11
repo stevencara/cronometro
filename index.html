@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <title>Mi Cronómetro</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <title>Codigo Facilito</title>
 </head>
 
 <body>
@@ -66,20 +66,24 @@
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>                 
                 </form>
+                <button type="button" class="btn btn-light ms-2">Iniciar Sesión</button>
+                <button type="button" class="btn btn-success ms-2">Registrarse</button>
             </div>
         </div>
     </nav>
 
+    <!-- -------------------------- Creación de aviso -------------------------- -->
     <div class="container-fluid text-center mt-2 mb-2 p-4 bg-info">
-        <div class="mx-auto m-2" style="width: 25cm;">
-            <h1>Aprende lo que tu carrera como programador necesita</h1>
-            <button type="button" class="btn btn-warning m-2">Empieza con 10 clases gratis</button>
-            <h6 class="m-2">Únete a la plataforma de aprendizaje para desarrolladores con más de 500 horas de contenidos
-                impartidos por expertos de la industria de la tecnología.</h6>
-        </div>
-        <div class="container">
+        <div class="row">
+            <div class="mx-auto m-2 col-12 col-lg-7 col-sm-12">
+                <h1>Aprende lo que tu carrera como programador necesita</h1>
+                <button type="button" class="btn btn-warning m-2"><b>Empieza con 10 clases gratis</b></button>
+                <h6 class="m-2">Únete a la plataforma de aprendizaje para desarrolladores con más de 500 horas de contenidos
+                    impartidos por expertos de la industria de la tecnología.</h6>
+            </div>
+        <div class="container col-12">
             <img src="./img/javascript.png" alt="logo_javascript" style="width: 50px; height: 50px"
                 class="mx-auto me-3">
             <img src="./img/azure_logo.png" alt="logo_javascript" style="width: 50px; height: 50px"
@@ -91,11 +95,12 @@
             <img src="./img/react_logo.png" alt="logo_javascript" style="width: 50px; height: 50px"
                 class="mx-auto me-3">
         </div>
+        </div>
     </div>
 
-    <button id="boton_play">Play</button>
+    <!--<button id="boton_play">Play</button>
     <button id="boton_pause">Pause</button>
-    <button id="boton_reset">Reset</button>
+    <button id="boton_reset">Reset</button>-->
 
 
     <!-- ------------------------- Creacion de footer -------------------------- -->
@@ -103,7 +108,7 @@
         <div class="container text-center text-md-left">
             <div class="row">
                 <!-- Información de la compañía -->
-                <div class="col-md-3 text-start">
+                <div class="col-12 col-lg-3 col-md-3 col-sm-12 text-start">
                     <h5 class="mb-3">Código Facilito</h5>
                     <div class="container bg-black rounded p-3 mb-3">
                         <p>“Los ordenadores son inútiles. Sólo pueden darte respuestas” - Pablo Picasso</p>
@@ -115,7 +120,7 @@
                 </div>
 
                 <!-- Enlaces rápidos -->
-                <div class="col-md-3 text-start">
+                <div class="col-12 col-lg-3 col-md-3 col-sm-12 text-start">
                     <h5 class="mb-3">Enlaces</h5>
                     <ul class="list-unstyled fs-6">
                         <li><a href="./index.html" class="text-white text-decoration-none">Desarrollador Web Frontend</a></li>
@@ -129,7 +134,7 @@
                 </div>
 
                 <!-- Redes sociales -->
-                <div class="col-md-3 fs-6 text-start">
+                <div class="col-12 col-lg-3 col-md-3 col-sm-12 fs-6 text-start">
                     <h5 class="mb-3">Código Facilito</h5>
                     <p>Cursos</p>
                     <p>Términos y Condiciones</p>
@@ -139,7 +144,7 @@
                 </div>
 
                 <!-- Descargar en playstore -->
-                <div class="col-md-3 text-start">
+                <div class="col-12 col-lg-3 col-md-3 col-sm-12 text-start">
                     <h5 class="mb-3">Descarga la app</h5>
                     <p>Hecho con 💚 desde LATAM para todo el mundo de habla hispana.</p>
                     <div>

@@ -4,18 +4,6 @@
     padding: 0;
 }
 
-
-.cronometro{
-    width: 60%;
-    height: 80%;
-    background-color: white;
-    border: 3px solid rgba(0, 0, 0, 0.8);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
 .tablero{
     width: 60%;
     height: 50%;
@@ -32,7 +20,7 @@
     justify-content: center;
 }
 
-.botones{
+/*.botones{
     width: 60%;
     height: 20%;
     background-color: crimson;
@@ -42,7 +30,8 @@
     align-items: center;
     justify-content: space-around;
     }
-    .botones button{
+
+.botones button{
     background-color: white;
     padding: 10px 20px;
     border: 3px solid rgba(0, 0, 0, 0.9);
@@ -53,4 +42,4 @@
     .botones button:hover{
     background-color: white;
     color: red;
-    }
+    }*/
